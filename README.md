@@ -52,6 +52,10 @@ This Android application is a user-friendly To-Do List app that helps you stay o
 * ***Database:*** Firebase Realtime Database  
 * ***Authentication:*** Firebase Realtime Authentication
 
+## Project Screenshots
+![added successfully](https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/878e77af-2d9e-4757-88fc-82d8b1acac86)
+
+
 ## Installation Steps
 **Method 1:**
 <p>1. Open Android Studio.</p>
