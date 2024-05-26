@@ -53,8 +53,15 @@ This Android application is a user-friendly To-Do List app that helps you stay o
 * ***Authentication:*** Firebase Realtime Authentication
 
 ## Project Screenshots
-![added successfully](https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/878e77af-2d9e-4757-88fc-82d8b1acac86)
-
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/7d2cdd87-0bc3-4623-8533-4fc826b2c69e" alt="Splash Screen" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/7ca87af6-2368-4219-9135-b301104f1df0" alt="Sign in Page" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/b5d2b0ad-ba85-492c-b4ca-b23d965891ba" alt="Sign Up Page" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/fe3e8a12-f3dd-4825-b73b-97fb8af0ca61" alt="Login Sucessfull" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/ea0573cd-2f37-4f58-8783-b2fcdc7fef8a" alt="Adding of Task" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/ba20afe1-4853-4a95-b3c3-9bd5ff0b0a73" alt="Task Added Sucessfully" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/5d3411f5-36df-4c11-a91e-44ca9aabfc36" alt="Task Update Sucessfully" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/2b55d621-eb44-410f-b174-40e8882ab169" alt="Task Delete Sucessfully" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/b1bfe8bb-2e8f-42c7-9118-019928af6b60" alt="Logout Sucessfully" width="200px" height="400px">
 
 ## Installation Steps
 **Method 1:**
