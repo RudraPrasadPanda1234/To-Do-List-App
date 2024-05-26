@@ -78,12 +78,11 @@ class signupFragment : Fragment() {
         if (!passwordText.matches(".*[@#\$%^&+=].*".toRegex())) {
             return "Must Contain 1 Special Character (@#\$%^&+=)"
         }
-
         return null
     }
 
     private fun verifypasswordFocusListener(view: View) {
-        binding.signuppass.setOnFocusChangeListener { _, focused ->
+        binding.signupvpass.setOnFocusChangeListener { _, focused ->
             if (!focused) {
                 binding.signupverifypasswordcontainer.helperText = verifyvalidPassword()
             }
@@ -91,7 +90,7 @@ class signupFragment : Fragment() {
     }
 
     private fun verifyvalidPassword(): String? {
-        val passwordText = binding.signuppass.text.toString()
+        val passwordText = binding.signupvpass.text.toString()
         if (passwordText.length < 8) {
             return "Minimum 8 Character Password"
         }
@@ -104,7 +103,6 @@ class signupFragment : Fragment() {
         if (!passwordText.matches(".*[@#\$%^&+=].*".toRegex())) {
             return "Must Contain 1 Special Character (@#\$%^&+=)"
         }
-
         return null
     }
 
@@ -125,6 +123,8 @@ class signupFragment : Fragment() {
                 Toast.makeText(context, "Enter a mail id and password", Toast.LENGTH_SHORT).show()
             } else if (binding.signupname.text.toString().length == 0 && binding.signuppass.text.toString().length == 0) {
                 Toast.makeText(context, "Enter a password and name", Toast.LENGTH_SHORT).show()
+            } else if (binding.signupemail.text.toString().length == 0 && binding.signupname.text.toString().length == 0) {
+                Toast.makeText(context, "Enter a mail id and name", Toast.LENGTH_SHORT).show()
             } else if (binding.signuppass.text.toString().length == 0) {
                 Toast.makeText(context, "Enter a password", Toast.LENGTH_SHORT).show()
             } else if (binding.signupemail.text.toString().length == 0) {
@@ -137,30 +137,27 @@ class signupFragment : Fragment() {
             val Vpass = binding.signupvpass.text.toString().trim()
             val Name = binding.signupname.text.toString().trim()
             val user = User(Email, Name, Pass)
-
+            val passcheck = verifyvalidPassword()
             if (Email.isNotEmpty() && Pass.isNotEmpty() && Vpass.isNotEmpty()) {
                 if (Pass == Vpass) {
-                    binding.progressBar2.visibility = View.VISIBLE
-                    auth.createUserWithEmailAndPassword(Email, Pass).addOnCompleteListener(
-                        OnCompleteListener {
-                            if (it.isSuccessful) {
-                                databaseRef = FirebaseDatabase.getInstance().//getReference("Users")
-                                reference.child("Users").child(auth.currentUser?.uid.toString())
-                                databaseRef.push().setValue(user).addOnCompleteListener {
-                                    Toast.makeText(
-                                        context,
-                                        "Register Successfully",
-                                        Toast.LENGTH_SHORT
-                                    )
-                                        .show()
-                                    navController.navigate(R.id.action_signupFragment_to_homeFragment)
+                    if (passcheck == null) {
+                        binding.progressBar2.visibility = View.VISIBLE
+                        auth.createUserWithEmailAndPassword(Email, Pass).addOnCompleteListener(OnCompleteListener {
+                                if (it.isSuccessful) {
+                                    databaseRef = FirebaseDatabase.getInstance().//getReference("Users")
+                                        reference.child("Users").child(auth.currentUser?.uid.toString())
+                                    databaseRef.push().setValue(user).addOnCompleteListener {
+                                        Toast.makeText(context, "Register Successfully", Toast.LENGTH_SHORT).show()
+                                        navController.navigate(R.id.action_signupFragment_to_homeFragment)
+                                    }
+                                } else {
+                                    Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT).show()
                                 }
-                            } else {
-                                Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT)
-                                    .show()
-                            }
-                            binding.progressBar2.visibility = View.GONE
-                        })
+                                binding.progressBar2.visibility = View.GONE
+                            })
+                    } else {
+                        Toast.makeText(context, "Password requirement does not match ", Toast.LENGTH_SHORT).show()
+                    }
                 } else {
                     Toast.makeText(context, "Password doesn't match", Toast.LENGTH_SHORT).show()
                 }
@@ -170,5 +167,4 @@ class signupFragment : Fragment() {
             navController.navigate((R.id.action_signupFragment_to_signinFragment))
         }
     }
-
 }
