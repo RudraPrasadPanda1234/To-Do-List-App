@@ -17,10 +17,11 @@
 <br/>
 
 ![Downloads](https://img.shields.io/github/downloads/RudraPrasadPanda1234/TO-DO-LIST-APP/total)
-![Contributors](https://img.shields.io/github/contributors/RudraPrasadPanda1234/TO-DO-LIST-APP?color=dark-green) 
-![Forks](https://img.shields.io/github/forks/RudraPrasadPanda1234/TO-DO-LIST-APP?style=social) 
-![Stargazers](https://img.shields.io/github/stars/RudraPrasadPanda1234/TO-DO-LIST-APP?style=social) 
+![Contributors](https://img.shields.io/github/contributors/RudraPrasadPanda1234/TO-DO-LIST-APP) 
+![Forks](https://img.shields.io/github/forks/RudraPrasadPanda1234/TO-DO-LIST-APP?style=flatl) 
+![Stargazers](https://img.shields.io/github/stars/RudraPrasadPanda1234/TO-DO-LIST-APP?style=flat) 
 ![Issues](https://img.shields.io/github/issues/RudraPrasadPanda1234/TO-DO-LIST-APP)
+![Pull Request](https://img.shields.io/github/issues-pr/RudraPrasadPanda1234/To-Do-List-App)
 
 ## Table Of Contents
 * [About The Project](#about-the-project)
@@ -64,7 +65,7 @@ This Android application is a user-friendly To-Do List app that helps you stay o
 <p>1. Clone the repository to your local machine:</p>
 
 ```
-git clone https://github.com/RudraPrasadPanda1234/TO-DO-LIST-APP
+git clone https://github.com/RudraPrasadPanda1234/To-Do-List-App.git
 ```
 
 <p>2. Open the project in Android Studio.</p>
