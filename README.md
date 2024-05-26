@@ -30,11 +30,7 @@
 * [Contributing Guidlines](#contributing-guidlines)
 
 ## About The Project
-This Android application is a user-friendly To-Do List app that helps you stay organized and manage your tasks efficiently. It allows you to:
-Create new tasks with descriptive titles and optional due dates
-Edit existing tasks to update their details
-Delete tasks that are no longer relevant
-Securely register and log in using Firebase Realtime Authentication
+This Android application is a user-friendly To-Do List app that helps you stay organized and manage your tasks efficiently. It allows you to create new tasks with descriptive titles and optional due dates. Edit existing tasks to update their details. Delete tasks that are no longer relevant. Securely register and log in using Firebase Realtime Authentication.
 
 ## Features
 **Robust Task Management:**
