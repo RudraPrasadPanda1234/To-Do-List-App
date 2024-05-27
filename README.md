@@ -53,7 +53,8 @@ This Android application is a user-friendly To-Do List app that helps you stay o
 * ***Authentication:*** Firebase Realtime Authentication
 
 ## Project Screenshots
-<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/7d2cdd87-0bc3-4623-8533-4fc826b2c69e" alt="Splash Screen" width="200px" height="400px">
+<img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/510b3b2f-c91b-47a4-bb0f-886eed60920c" alt="Splash Screen" width="200px" height="400px">
+<!-- <img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/7d2cdd87-0bc3-4623-8533-4fc826b2c69e" alt="Splash Screen" width="200px" height="400px"> -->
 <img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/7ca87af6-2368-4219-9135-b301104f1df0" alt="Sign in Page" width="200px" height="400px">
 <img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/b5d2b0ad-ba85-492c-b4ca-b23d965891ba" alt="Sign Up Page" width="200px" height="400px">
 <img src="https://github.com/RudraPrasadPanda1234/To-Do-List-App/assets/122832936/fe3e8a12-f3dd-4825-b73b-97fb8af0ca61" alt="Login Sucessfull" width="200px" height="400px">
