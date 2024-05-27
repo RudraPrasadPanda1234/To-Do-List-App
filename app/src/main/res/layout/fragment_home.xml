@@ -58,7 +58,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:clickable="true"
-        android:src="@drawable/baseline_logout_24"
+        android:src="@drawable/logoutblack"
         app:fabCustomSize="46dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

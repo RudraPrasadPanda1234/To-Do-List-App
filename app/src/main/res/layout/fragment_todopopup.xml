@@ -70,10 +70,10 @@
             android:layout_height="51dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
-            android:src="@drawable/add"
+            android:src="@drawable/addfillgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintHorizontal_bias="0.907"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView1"
             app:layout_constraintVertical_bias="0.0" />
